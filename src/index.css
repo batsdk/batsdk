@@ -2,8 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'SolidenTrial';
+  src: url('/fonts/SolidenTrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SolidenTrial';
+  src: url('/fonts/SolidenTrial-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SolidenTrial';
+  src: url('/fonts/SolidenTrial-BoldCondensed.ttf') format('truetype');
+  font-weight: bold;
+  font-style: condensed;
+}
+
+@font-face {
+  font-family: 'SolidenTrial';
+  src: url('/fonts/SolidenTrial-BoldExpanded.ttf') format('truetype');
+  font-weight: bold;
+  font-style: expanded;
+}
+
+@font-face {
+  font-family: 'SolidenTrial';
+  src: url('/fonts/SolidenTrial-Condensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: condensed;
+}
+
+@font-face {
+  font-family: 'SolidenTrial';
+  src: url('/fonts/SolidenTrial-Expanded.ttf') format('truetype');
+  font-weight: normal;
+  font-style: expanded;
+}
+
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'SolidenTrial', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -35,6 +78,9 @@ body {
 }
 
 h1 {
+  font-family: 'SolidenTrial', sans-serif;
+  font-weight: bold;  /* Ensures it picks up the bold font */
+  font-style: expanded;  /* Ensures it uses the expanded style */
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -68,5 +114,11 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@layer base {
+  body {
+    @apply font-soliden;
   }
 }
