@@ -37,8 +37,8 @@ function App() {
             </h4>
             <br />
             <h4 className="text-base md:text-lg" >
-              <span className="font-bold" >TypeScript</span>{''}
-              I speak fluent , a bit of {' '}
+              I speak fluent <span className="font-bold" >TypeScript</span>{''}
+               a bit of {' '}
               <span className="font-bold" >Golang</span>{''}
               , and sarcasm (the third one is optional, but it makes debugging more fun).
               I love clean code, smart design, and making the internet a little better, one project at a time.
