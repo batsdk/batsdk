@@ -4,8 +4,8 @@ function App() {
     <div className="max-w-full overflow-x-hidden">
       <section className="bg-cover bg-no-repeat bg-opacity-5 min-h-[60vh] md:min-h-screen min-w-[100vw]">
         <div className="flex min-h-screen flex-col justify-center items-center text-[#231f20]">
-          <h1 className="text-7xl md:text-9xl" >Shemil</h1>
-          <h5 className="text-lg md:text-2xl flex flex-wrap text-center" >Engineer Crafting innovative, scalable solutions</h5>
+          <h1 className="text-white text-7xl md:text-9xl" >Shemil</h1>
+          <h5 className="text-white text-lg md:text-2xl flex flex-wrap text-center" >Engineer Crafting innovative, scalable solutions</h5>
         </div>
       </section>
       <section className="bg-[#290628] min-h-screen w-full flex items-center justify-center " >
