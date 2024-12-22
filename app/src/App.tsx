@@ -29,7 +29,7 @@ function App() {
           </div>
 
           {/* Socials */}
-          {/* Trigger Github Workflow - 1 */}
+          {/* Trigger Github Workflow - 2 */}
         </div>
       </section>
     </div>
