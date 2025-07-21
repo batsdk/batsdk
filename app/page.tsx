@@ -157,12 +157,22 @@ export default function Portfolio() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-emerald-500/25">
+            <Button
+              className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-emerald-500/25"
+              onClick={() => {
+                const el = document.getElementById('projects');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               View My Work
             </Button>
             <Button
               variant="outline"
               className="border-emerald-500/50 text-emerald-600 hover:bg-emerald-50 px-8 py-3 rounded-full transition-all duration-300 bg-transparent"
+              onClick={() => {
+                const el = document.getElementById('contact');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Get In Touch
             </Button>
@@ -370,7 +380,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-emerald-200">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-500">© 2025 Batsdk. Built with code, curiosity, and a touch of Gotham-inspired determination.</p>
+          <p className="text-gray-500">© 2025 Batsdk. Built with love, curiosity, and a touch of Gotham-inspired determination.</p>
         </div>
       </footer>
     </div>
